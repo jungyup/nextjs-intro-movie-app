@@ -1,9 +1,8 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
 import Seo from '../components/Seo';
 
-const API_KEY = "b1e2b0b293846c37c27b7ac25dbaec73";
+const API_KEY = process.env.API_KEY;
 
 export default function Home({ results }) {
     const router = useRouter();
